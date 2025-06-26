@@ -188,24 +188,26 @@ ul li span:hover{
         font-size: 14px;
         align-self: center;
     }
-    ul li {
-        font-size: 14px; /* Scale down list items */
+   ul li {
+        display: flex; /* Align content horizontally */
+        align-items: center; /* Vertically align items */
+        font-size: 14px; /* Adjust font size */
         line-height: 24px;
-        padding: 10px 5px 10px 35px;
-        display: flex; /* Align text and bullet horizontally */
-        align-items: center; /* Vertically align text and bullet */
+        padding: 10px 5px 10px 35px; /* Adjust padding */
     }
+
     ul li::before {
         content: '';
-        position: relative; /* Position relative to the list item */
-        height: 20px; /* Adjust size for smaller screens */
-        width: 20px;
-        margin-right: 10px; /* Add spacing between bullet and text */
-        border-radius: 50%; /* Maintain circular shape */
-        background-image: url(images/unchecked.png);
+        display: inline-block;
+        width: 20px; /* Adjust size of the circle */
+        height: 20px;
+        margin-right: 10px; /* Space between circle and text */
+        border-radius: 50%; /* Circular shape */
+        background-image: url(images/unchecked.png); /* Adjust based on your setup */
         background-size: cover;
         background-position: center;
     }
+
     ul li span {
         width: 30px;
         height: 30px;
