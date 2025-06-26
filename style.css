@@ -170,6 +170,7 @@ ul li span:hover{
     }
     h2 img {
         width: 40px; /* Scale down the icon */
+        margin: 3px;
     }
     .row {
         flex-direction: column; /* Stack input and button */
