@@ -156,3 +156,45 @@ ul li span:hover{
     color: #ff5945;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .todo-app {
+        max-width: 100%; /* Use full width on smaller screens */
+        padding: 20px 15px; /* Reduce padding for better fit */
+    }
+    h2 {
+        font-size: 20px; /* Adjust heading size */
+    }
+    h2 img {
+        width: 40px; /* Scale down the icon */
+    }
+    .row {
+        flex-direction: column; /* Stack input and button */
+        align-items: stretch;
+        padding: 10px;
+    }
+    input {
+        font-size: 16px; /* Make text more legible */
+        padding: 10px 15px; /* Adjust padding for better usability */
+        margin-bottom: 10px; /* Add spacing between input and button */
+    }
+    button {
+        padding: 12px 20px; /* Reduce button size */
+        font-size: 14px;
+        align-self: center;
+    }
+    ul li {
+        font-size: 14px; /* Scale down list items */
+        line-height: 24px;
+        padding: 10px 5px 10px 35px;
+    }
+    ul li span {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
