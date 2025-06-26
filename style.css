@@ -192,6 +192,19 @@ ul li span:hover{
         font-size: 14px; /* Scale down list items */
         line-height: 24px;
         padding: 10px 5px 10px 35px;
+        display: flex; /* Align text and bullet horizontally */
+        align-items: center; /* Vertically align text and bullet */
+    }
+    ul li::before {
+        content: '';
+        position: relative; /* Position relative to the list item */
+        height: 20px; /* Adjust size for smaller screens */
+        width: 20px;
+        margin-right: 10px; /* Add spacing between bullet and text */
+        border-radius: 50%; /* Maintain circular shape */
+        background-image: url(images/unchecked.png);
+        background-size: cover;
+        background-position: center;
     }
     ul li span {
         width: 30px;
